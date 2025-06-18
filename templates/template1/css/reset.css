@@ -1,0 +1,35 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl,
+.row {
+   --bs-gutter-x: 2rem;
+}
+
+.fs-reset {
+   font-size: inherit !important;
+}
+
+.link-hover {
+   opacity: .75;
+   transition: .3s ease-in-out;
+
+   &:hover,
+   &:focus,
+   &.active {
+      opacity: 1;
+   }
+}
+
+.media {
+   display: flex;
+   align-items: first baseline;
+
+   .media-header {
+      min-width: 1.5rem;
+      margin-right: .25rem;
+   }
+}
