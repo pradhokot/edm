@@ -7,87 +7,49 @@
       * {
          outline: solid 1px green;
          outline: solid 1px transparent;
-      }      
+      }
+
+      .banner .ratio {
+         aspect-ratio: 3/4;
+
+         @media (min-width: 768px) {
+            aspect-ratio: 4/3;
+         }
+
+         @media (min-width: 992px) {
+            aspect-ratio: 16/9;
+         }
+
+         @media (min-width: 1200px) {
+            aspect-ratio: 21/9;
+         }
+
+         @media (min-width: 1400px) {
+            aspect-ratio: 3/1;
+         }
+      }
    </style>
 </head>
 <body>
-   <nav class="navbar navbar-expand fixed-top bg-body">
-      <div class="container-fluid container-content column-gap-3">
-         <button class="navbar-toggler p-0 rounded-0 border-0 shadow-none d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-            <i class="navbar-toggler-icon"></i>
-         </button>
-         <h1 class="fs-reset m-0 lh-base d-lg-none">
-            <img src="../../assets/img/icon-indraco.png" width="40" height="auto" alt="">
-         </h1>
-         <div class="navbar-collapse">
-            <div class="d-none d-lg-block small">
-               <script src="layout/menu-header.js"></script>
-            </div>
-            <ul class="nav ms-auto column-gap-3 text-capitalize">
-               <li class="nav-item">
-                  <a href="#" class="nav-link px-0 text-reset media">
-                     <div class="media-header">
-                        <span class="link-icon">
-                           <i class="fas fa-search fa-lg"></i>
-                        </span>
-                     </div>
-                     <div class="media-body d-none d-md-block">
-                        <span class="link-text link-hover">
-                           search
-                        </span>
-                     </div>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link px-0 text-reset media">
-                     <div class="media-header">
-                        <span class="link-icon">
-                           <i class="fas fa-search fa-lg"></i>
-                        </span>
-                     </div>
-                     <div class="media-body d-none d-md-block">
-                        <span class="link-text link-hover">
-                           bilingual
-                        </span>
-                     </div>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link px-0 text-reset media">
-                     <div class="media-header">
-                        <span class="link-icon">
-                           <i class="fas fa-sun fa-lg"></i>
-                        </span>
-                     </div>
-                     <div class="media-body d-none d-md-block">
-                        <span class="link-text link-hover">
-                           dark theme
-                        </span>
-                     </div>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link px-0 text-reset media">
-                     <div class="media-header">
-                        <span class="link-icon">
-                           <i class="fas fa-user fa-lg"></i>
-                        </span>
-                     </div>
-                     <div class="media-body d-none d-md-block">
-                        <span class="link-text link-hover">
-                           account
-                        </span>
-                     </div>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div><!-- end container -->
-   </nav><!-- end navbar -->
+   <script src="layout/navbar.js"></script>
    <script src="layout/sidebar.js"></script>
    <header class="banner mb-5">
       <div class="container-fluid container-content">
-         <div class="ratio ratio-21x9 text-bg-dark"></div>
+         <div class="ratio text-white rounded" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../assets/img/banner-coffee.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="top-50 start-50 translate-middle w-auto h-auto">
+               <h2 class="display-4 text-center">
+                  <b class="fw-thin">
+                     <small>Welcome to</small>
+                     <br>
+                     <b class="fw-medium">COSMOSENDER</b>
+                     <br>
+                     <img src="../../assets/img/logo-supresso.png" style="width: calc(24px + 1vw);" height="auto" alt="SUPRESSO">
+                     &nbsp;
+                     <img src="../../assets/img/logo-indraco-invert.png" style="width: calc(86px + 1vw);" height="auto" alt="INDRACOSTORE">
+                  </b>
+               </h2>
+            </div>
+         </div>
       </div><!-- end container -->
    </header><!-- end banner -->
    <main class="page">

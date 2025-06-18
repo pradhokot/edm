@@ -10,6 +10,7 @@ document.writeln(`
       <div id="menu" class="w-100">
          <div class="d-lg-none">
             <script src="layout/menu-header.js"></script>
+            <hr>
          </div>
          <ul class="nav menu-list text-capitalize flex-column">
             <li class="nav-item menu-item toggle-collapse">
