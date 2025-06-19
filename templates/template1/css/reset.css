@@ -4,8 +4,7 @@
 .container-md,
 .container-sm,
 .container-xl,
-.container-xxl,
-.row {
+.container-xxl {
    --bs-gutter-x: 2rem;
 }
 

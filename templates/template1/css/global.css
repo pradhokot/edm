@@ -1,6 +1,8 @@
 :root {
    --navbar-heihgt: 4rem;
    --sidebar-width: 16rem;
+   --bs-light: #f1f2f2;
+   --bs-light-rgb: 241, 242, 242;
 }
 
 @media (min-width: 992px) {

@@ -3,64 +3,42 @@
 <head>
    <script src="layout/head.js"></script>
    <title>COSMOSENDER &bull; Home</title>
+   <link rel="stylesheet" href="css/landing.css"> 
    <style>
       * {
          outline: solid 1px green;
          outline: solid 1px transparent;
-      }
-
-      .banner .ratio {
-         aspect-ratio: 3/4;
-
-         @media (min-width: 768px) {
-            aspect-ratio: 4/3;
-         }
-
-         @media (min-width: 992px) {
-            aspect-ratio: 16/9;
-         }
-
-         @media (min-width: 1200px) {
-            aspect-ratio: 21/9;
-         }
-
-         @media (min-width: 1400px) {
-            aspect-ratio: 3/1;
-         }
       }
    </style>
 </head>
 <body>
    <script src="layout/navbar.js"></script>
    <script src="layout/sidebar.js"></script>
-   <header class="banner mb-5">
+   <header class="banner">
       <div class="container-fluid container-content">
-         <div class="ratio text-white rounded" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../assets/img/banner-coffee.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
-            <div class="top-50 start-50 translate-middle w-auto h-auto">
-               <h2 class="display-4 text-center">
-                  <b class="fw-thin">
-                     <small>Welcome to</small>
-                     <br>
-                     <b class="fw-medium">COSMOSENDER</b>
-                     <br>
-                     <img src="../../assets/img/logo-supresso.png" style="width: calc(24px + 1vw);" height="auto" alt="SUPRESSO">
-                     &nbsp;
-                     <img src="../../assets/img/logo-indraco-invert.png" style="width: calc(86px + 1vw);" height="auto" alt="INDRACOSTORE">
-                  </b>
-               </h2>
-            </div>
-         </div>
+         <div class="ratio text-bg-dark"></div>
       </div><!-- end container -->
    </header><!-- end banner -->
    <main class="page">
       <section>
          <div class="container-fluid container-content">
-            <p>
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda qui, corrupti veritatis ipsa natus velit non cum labore nihil libero illo culpa commodi consectetur maiores tenetur est magni, earum ut?
-            </p>
+            <div class="row row-cols-1 row-cols-md-2 g-3 pt-3">
+               <div class="col">
+                  <div class="ratio ratio-4x3 text-bg-dark"></div>
+               </div><!-- end col -->
+               <div class="col">
+                  <div class="ratio ratio-4x3 text-bg-dark"></div>
+               </div><!-- end col -->
+               <div class="col">
+                  <div class="ratio ratio-4x3 text-bg-dark"></div>
+               </div><!-- end col -->
+               <div class="col">
+                  <div class="ratio ratio-4x3 text-bg-dark"></div>
+               </div><!-- end col -->
+            </div><!-- end row -->
          </div><!-- end container -->
       </section>
-      <section class="vh-100"></section>
+      <!-- <section class="vh-100"></section> -->
    </main><!-- end page -->
    <script src="layout/footbar.js"></script>
    <script src="js/global.js"></script>

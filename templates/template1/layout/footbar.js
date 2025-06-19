@@ -1,6 +1,6 @@
 document.writeln(`
 <footer class="footbar small">
-   <div class="container-fluid container-content">
+   <div class="container-fluid container-content py-4">
       <div class="row">
          <div class="col col-12">
             <p>
