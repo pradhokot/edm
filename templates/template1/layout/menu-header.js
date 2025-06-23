@@ -1,5 +1,5 @@
 document.writeln(`
-<ul class="nav menu-list text-capitalize flex-column flex-lg-row column-gap-lg-3">
+<ul class="nav menu-list flex-column flex-lg-row column-gap-lg-3">
    <li class="nav-item menu-item">
       <a href="#" class="nav-link menu-link px-0 text-reset media">
          <div class="media-header d-lg-none">

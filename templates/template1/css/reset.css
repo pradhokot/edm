@@ -1,3 +1,22 @@
+:root,
+[data-bs-theme=light] {
+   --img-default: inline;
+   --img-invert: none;
+}
+
+[data-bs-theme=dark] {
+   --img-default: none;
+   --img-invert: inline;
+}
+
+.img-default {
+   display: var(--img-default);
+}
+
+.img-invert {
+   display: var(--img-invert);
+}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -23,6 +42,16 @@
    }
 }
 
+.link-hover-underline {
+   text-decoration: none;
+
+   &:hover,
+   &:focus,
+   &.active {
+      text-decoration: underline;
+   }
+}
+
 .media {
    display: flex;
    align-items: first baseline;
@@ -31,4 +60,85 @@
       min-width: 1.5rem;
       margin-right: .25rem;
    }
+}
+
+.dropdown {
+   @media (min-width: 992px) {
+      &:hover>.dropdown-menu {
+         display: block;
+      }
+   }
+}
+
+.border-reset {
+   border-color: currentColor !important;
+}
+
+.bg-dark-invert {
+   background-color: var(--bs-body-color);
+}
+
+.text-bg-dark-invert {
+   background-color: var(--bs-body-color);
+   color: var(--bs-body-bg);
+}
+
+.btn-outline-light-invert {
+   background-color: transparent;
+   color: var(--bs-body-bg);
+   border-color: var(--bs-body-bg);
+
+   &:hover,
+   &:focus,
+   &.active {
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+      border-color: var(--bs-body-bg);
+   }
+}
+
+.btn-light-invert {
+   background-color: rgba(var(--bs-body-bg-rgb), .75);
+   color: var(--bs-body-color);
+   border-color: var(--bs-body-bg);
+
+   &:hover,
+   &:focus,
+   &.active {
+      background-color: rgba(var(--bs-body-bg-rgb), 1);
+      color: var(--bs-body-color);
+      border-color: var(--bs-body-bg);
+   }
+}
+
+.btn-outline-dark-invert {
+   background-color: transparent;
+   color: var(--bs-body-color);
+   border-color: var(--bs-body-color);
+
+   &:hover,
+   &:focus,
+   &.active {
+      background-color: var(--bs-body-color);
+      color: var(--bs-body-bg);
+      border-color: var(--bs-body-color);
+   }
+}
+
+.btn-dark-invert {
+   background-color: rgba(var(--bs-body-color-rgb), .75);
+   color: var(--bs-body-bg);
+   border-color: var(--bs-body-color);
+
+   &:hover,
+   &:focus,
+   &.active {
+      background-color: rgba(var(--bs-body-color-rgb), 1);
+      color: var(--bs-body-bg);
+      border-color: var(--bs-body-color);
+   }
+}
+
+.fs-small {
+   font-size: small !important;
 }

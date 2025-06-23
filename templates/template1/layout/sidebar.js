@@ -1,8 +1,9 @@
 document.writeln(`
-<aside id="sidebar" class="offcanvas-lg offcanvas-start position-fixed top-0 start-0 bottom-0 bg-light" z-index="-1">
+<aside id="sidebar" class="offcanvas-lg offcanvas-start text-capitalize position-fixed top-0 start-0 bottom-0" z-index="-1">
    <div class="offcanvas-header p-3 py-0 d-flex justify-content-lg-center px-lg-4">
       <h1 class="fs-reset m-0 lh-base">
-         <img src="../../assets/img/logo-indraco.png" width="160" height="auto" alt="">
+         <img src="../../assets/img/logo-indraco.png" width="160" height="auto" class="img-default" alt="">
+         <img src="../../assets/img/logo-indraco-invert.png" width="160" height="auto" class="img-invert" alt="">
       </h1>
       <button class="btn-close rounded-0 shadow-none d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
    </div>
@@ -12,7 +13,7 @@ document.writeln(`
             <script src="layout/menu-header.js"></script>
             <hr>
          </div>
-         <ul class="nav menu-list text-capitalize flex-column">
+         <ul class="nav menu-list flex-column">
             <li class="nav-item menu-item toggle-collapse">
                <a data-bs-toggle="collapse" href="#collapseMenu1" class="nav-link menu-link px-0 text-reset collapsed">
                   <span class="link-text link-hover">main menu</span>

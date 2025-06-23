@@ -1,14 +1,30 @@
 :root {
-   --navbar-heihgt: 4rem;
+   --navbar-heihgt: 5rem;
    --sidebar-width: 16rem;
-   --bs-light: #f1f2f2;
-   --bs-light-rgb: 241, 242, 242;
+   --bs-primary: #fd4f00;
+   --bs-primary-rgb: 253, 79, 0;
 }
 
 @media (min-width: 992px) {
    :root {
-      --navbar-heihgt: 5rem;
+      --navbar-heihgt: 6rem;
    }
+}
+
+[data-bs-theme=light] {
+   --bs-body-bg: #ffffff;
+   --bs-body-bg-rgb: 255, 255, 255;
+   --sidebar-bg: #f1f1f1;
+   --dropdown-bg: #f8f8f8;
+   --bg-card: #f6f6f6;
+}
+
+[data-bs-theme=dark] {
+   --bs-body-bg: #333333;
+   --bs-body-bg-rgb: 51, 51, 51;
+   --sidebar-bg: #212121;
+   --dropdown-bg: #282828;
+   --bg-card: #262626;
 }
 
 body {
@@ -35,6 +51,8 @@ body {
 }
 
 #sidebar {
+   background-color: var(--sidebar-bg) !important;
+
    @media (min-width: 992px) {
       width: 100%;
       max-width: var(--sidebar-width);
@@ -79,7 +97,8 @@ body {
       }
    }
 
-   .menu-link, .submenu-link {
+   .menu-link,
+   .submenu-link {
       @media (min-width: 992px) {
          padding-top: .25rem;
          padding-bottom: .25rem;
@@ -111,4 +130,12 @@ body {
       padding-left: 2rem !important;
       padding-right: 2rem !important;
    }
+}
+
+.dropdown-menu {
+   background-color: var(--dropdown-bg);
+}
+
+.card {
+   background-color: var(--bg-card);
 }
