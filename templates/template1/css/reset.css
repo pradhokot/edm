@@ -70,10 +70,7 @@
    }
 
    .dropdown-toggle::after {
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translate(-75%, -50%);
+      margin-left: unset;
    }
 }
 
@@ -155,4 +152,8 @@
    height: 100%;
    align-items: center;
    text-align: center;
+}
+
+.vr {
+   align-self: unset;
 }
