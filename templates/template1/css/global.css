@@ -1,6 +1,6 @@
 :root {
    --navbar-heihgt: 5rem;
-   --sidebar-width: 16rem;
+   --sidebar-width: 14rem;
    --bs-primary: #fd4f00;
    --bs-primary-rgb: 253, 79, 0;
 }
@@ -14,17 +14,15 @@
 [data-bs-theme=light] {
    --bs-body-bg: #ffffff;
    --bs-body-bg-rgb: 255, 255, 255;
-   --sidebar-bg: #f1f1f1;
    --dropdown-bg: #f8f8f8;
-   --bg-card: #f6f6f6;
+   --bg-card: #f1f1f1;
 }
 
 [data-bs-theme=dark] {
    --bs-body-bg: #333333;
    --bs-body-bg-rgb: 51, 51, 51;
-   --sidebar-bg: #212121;
-   --dropdown-bg: #282828;
-   --bg-card: #262626;
+   --dropdown-bg: #292929;
+   --bg-card: #242424;
 }
 
 body {
@@ -51,15 +49,22 @@ body {
 }
 
 #sidebar {
-   background-color: var(--sidebar-bg) !important;
-
    @media (min-width: 992px) {
       width: 100%;
       max-width: var(--sidebar-width);
    }
 
    .offcanvas-header {
-      height: var(--navbar-heihgt);
+      min-height: var(--navbar-heihgt);
+   }
+
+   .offcanvas-header,
+   .offcanvas-body {
+      padding: 0 1rem;
+
+      @media (min-width: 992px) {
+         padding: 0 0 0 2rem;
+      }
    }
 
    .toggle-collapse>.nav-link {
