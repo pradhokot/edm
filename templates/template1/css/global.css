@@ -1,13 +1,13 @@
 :root {
-   --navbar-heihgt: 5rem;
+   --navbar-heihgt: 4rem;
    --sidebar-width: 14rem;
    --bs-primary: #fd4f00;
    --bs-primary-rgb: 253, 79, 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
    :root {
-      --navbar-heihgt: 6rem;
+      --navbar-heihgt: 5rem;
    }
 }
 
@@ -143,4 +143,5 @@ body {
 
 .card {
    background-color: var(--bg-card);
+   height: 100%;
 }
