@@ -149,3 +149,10 @@
 .fs-small {
    font-size: small !important;
 }
+
+.nav-link {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   text-align: center;
+}
