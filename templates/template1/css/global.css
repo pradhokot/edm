@@ -1,6 +1,6 @@
 :root {
    --navbar-heihgt: 4rem;
-   --sidebar-width: 14rem;
+   --sidebar-width: 13rem;
    --bs-primary: #fd4f00;
    --bs-primary-rgb: 253, 79, 0;
 }
@@ -52,6 +52,7 @@ body {
    @media (min-width: 992px) {
       width: 100%;
       max-width: var(--sidebar-width);
+      font-size: small;
    }
 
    .offcanvas-header {
@@ -102,8 +103,7 @@ body {
       }
    }
 
-   .menu-link,
-   .submenu-link {
+   .nav-link {
       @media (min-width: 992px) {
          padding-top: .25rem;
          padding-bottom: .25rem;

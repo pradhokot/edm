@@ -2,8 +2,8 @@ document.writeln(`
 <aside id="sidebar" class="offcanvas-lg offcanvas-start text-capitalize position-fixed top-0 start-0 bottom-0 h-100 d-flex flex-column pb-4" z-index="-1">
    <div class="offcanvas-header flex-grow-0 d-flex justify-content-lg-center">
       <h1 class="fs-reset m-0 lh-base">
-         <img src="../../assets/img/logo-indraco.png" width="160" height="auto" class="img-default" alt="">
-         <img src="../../assets/img/logo-indraco-invert.png" width="160" height="auto" class="img-invert" alt="">
+         <img src="../../assets/img/logo-indraco.png" width="140" height="auto" class="img-default" alt="">
+         <img src="../../assets/img/logo-indraco-invert.png" width="140" height="auto" class="img-invert" alt="">
       </h1>
       <button class="btn-close rounded-0 shadow-none d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
    </div>
